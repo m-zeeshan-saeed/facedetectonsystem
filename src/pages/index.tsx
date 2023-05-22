@@ -620,7 +620,7 @@ export default function Home() {
           </p>
           <a
             href="#"
-            className="py-5 px-9 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-base font-bold shadow-md shadow-[#9ECB1D] "
+            className="py-5 px-9 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-base font-bold shadow-md hover:shadow-[#9ECB1D] "
             target="_BLANK"
           >
             <span>FREE Signup</span>
