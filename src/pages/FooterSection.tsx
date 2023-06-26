@@ -124,7 +124,7 @@ export default function FooterSection() {
               </p>
 
               <form className="mt-4">
-                <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start">
+                <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-end">
                   <label htmlFor="email" className="sr-only">
                     Email
                   </label>
