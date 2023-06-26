@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,5 +8,13 @@
 
 body {
   margin: 0px;
-  padding: 0;
+  padding: 0px;
+  font-family: 'Poppins';
+  color: white;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.slick-slide div {
+  margin: 0 1rem;
 }

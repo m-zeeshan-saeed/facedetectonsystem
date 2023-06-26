@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-
+import Feature from "./Feature";
+import HowItWork from "./HowItsWork";
+import PricingSection from "./PricingSection";
+import Demo from "./Demo";
+import FooterSection from "./FooterSection";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -37,10 +41,10 @@ export default function Home() {
             </button>
           </div>
           <div className="flex items-center justify-start gap-4 relative z-10">
-            <button className="py-3 px-6 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-sm font-semibold">
-              Sign Up
+            <button className="py-3 px-6 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D] ">
+              Demo
             </button>
-            <button className="py-3 px-6 whitespace-nowrap rounded-full bg-[#9ECB1D] font-['Poppins'] hover:bg-[#232323]  hover:text-white text-sm font-semibold">
+            <button className="text-black py-3 px-6 whitespace-nowrap rounded-full bg-[#9ECB1D] font-['Poppins'] hover:bg-[#232323]  hover:text-white text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D]">
               Log In
             </button>
           </div>
@@ -48,13 +52,13 @@ export default function Home() {
         <nav className="bg-black py-4 px-28 ">
           <div className="container flex gap-11 flex-row  items-start text-white capitalize font-['Poppins'] text-xl font-semibold">
             <a
-              href="#"
+              href="<Home />"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Home
             </a>
             <a
-              href="#"
+              href="<Feature/>"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Features
@@ -70,12 +74,6 @@ export default function Home() {
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Pricing
-            </a>
-            <a
-              href="#"
-              className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D]  "
-            >
-              Demo
             </a>
           </div>
         </nav>
@@ -602,7 +600,7 @@ export default function Home() {
             </defs>
           </svg>
         </div>
-        <div className="text-white font-['Poppins']  font-semibold text-[39px]  z-10 pl-[103px]">
+        <div className="text-white font-['Poppins']  font-semibold text-[39px]  z-10 pl-[103px] leading-10">
           <h3>
             Simple And Free Software
             <br />
@@ -627,13 +625,58 @@ export default function Home() {
           </a>
           <a
             href="#"
-            className="py-5 px-8 whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[25px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D]            "
+            className="py-5 px-8 whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[25px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D] "
           >
             <span>Download App</span>
           </a>
           <p className="pt-[10px] text-base mt-8">No Credit Card is Required</p>
         </div>
       </section>
+      <div className=" font-['Poppins'] bg-black flex items-center flex-row-reverse ">
+        <div className=" pl-[2.75rem] pr-4 w-full  ">
+          <div className="xl:w-[25%] xl:float-left lg:w-2/4 lg:float-left md:w-2/4 md:float-left sm:w-full sm:float-left  pr-4 pl-4 min-h-[1px] flex">
+            <div className=" pl-[30px]  pb-[60px] mt-[30px] mb-[135px] border-b-[1px] border-[#9ECB1D]  flex">
+              <div className="text-center ">
+                <p className="text-white pr-[75px] text-[20px] font-bold  ">
+                  <span className="   text-[#9ECB1D]  text-[53px] font-extralight pr-2  ">
+                    5,700
+                  </span>
+                  Users
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-white pr-[75px] text-[20px] font-bold ">
+                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
+                    500
+                  </span>
+                  Companies
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-white pr-[75px] text-[20px] font-bold ">
+                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
+                    10,000
+                  </span>
+                  Employee
+                </p>
+              </div>
+              <div className="text-center ">
+                <p className="text-white pr-[30px] text-[20px] font-bold ">
+                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
+                    750
+                  </span>
+                  Devices
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <Feature />
+      <HowItWork />
+      <PricingSection />
+      <Demo />
+      <FooterSection />
     </>
   );
 }
