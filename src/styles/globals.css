@@ -18,3 +18,16 @@ body {
 .slick-slide div {
   margin: 0 1rem;
 }
+
+input {
+  margin-top: 1rem;
+}
+
+input::file-selector-button {
+  font-weight: bold;
+  color: #9ECB1D;
+  padding: 0.5em;
+  border: thin solid rgb(55, 54, 54);
+  background-color: black;
+  border-radius: 3px;
+}

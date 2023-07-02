@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Feature from "./Feature";
-import HowItWork from "./HowItsWork";
-import PricingSection from "./PricingSection";
-import Demo from "./Demo";
-import FooterSection from "./FooterSection";
+import Feature from "./feature";
+import HowItWork from "./howItsWork";
+import PricingSection from "./pricingSection";
+import Demo from "./demo";
+import FooterSection from "./footerSection";
 const inter = Inter({ subsets: ["latin"] });
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,9 +24,9 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search"
-              className="w-full h-full py-2 px-2 outline-none bg-transparent text-[#8A8A8A] italic font-['Poppins']"
+              className="w-full h-full py-1 px-1 outline-none bg-transparent text-[#8A8A8A] italic font-['Poppins']"
             />
-            <button className="w-14 text-xs whitespace-nowrap  h-auto flex items-center justify-center rounded-full bg-[#9ECB1D]">
+            <button className="w-16 text-xs whitespace-nowrap  h-auto flex items-center justify-center rounded-full bg-[#9ECB1D]">
               <svg
                 width="18"
                 height="18"
@@ -41,40 +42,46 @@ export default function Home() {
             </button>
           </div>
           <div className="flex items-center justify-start gap-4 relative z-10">
-            <button className="py-3 px-6 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D] ">
-              Demo
-            </button>
-            <button className="text-black py-3 px-6 whitespace-nowrap rounded-full bg-[#9ECB1D] font-['Poppins'] hover:bg-[#232323]  hover:text-white text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D]">
-              Log In
-            </button>
+            <Link href="/demo">
+              <button className="py-3 px-6 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D] ">
+                Demo
+              </button>
+            </Link>
+            <Link
+              href="/login"
+              className="text-black py-3 px-6 whitespace-nowrap rounded-full bg-[#9ECB1D] font-['Poppins'] hover:bg-[#232323]  hover:text-white text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D]"
+              target="_BLANK"
+            >
+              <span>Log In</span>
+            </Link>
           </div>
         </div>
         <nav className="bg-black py-4 px-28 ">
           <div className="container flex gap-11 flex-row  items-start text-white capitalize font-['Poppins'] text-xl font-semibold">
-            <a
-              href="<Home />"
+            <Link
+              href="/"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Home
-            </a>
-            <a
-              href="<Feature/>"
+            </Link>
+            <Link
+              href="/feature"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Features
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/howItsWork"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               How It Works
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/pricingSection"
               className=" border-b-2 border-transparent hover:text-gray-800 transition-color duration-300 transform dark:hover:text-gray-200 hover:border-[#9ECB1D] "
             >
               Pricing
-            </a>
+            </Link>
           </div>
         </nav>
       </section>
@@ -616,19 +623,19 @@ export default function Home() {
             by managing attendance time and location using Face Recognition
             Technology
           </p>
-          <a
-            href="#"
+          <Link
+            href="/signup"
             className="py-5 px-9 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-base font-bold shadow-md hover:shadow-[#9ECB1D] "
             target="_BLANK"
           >
             <span>FREE Signup</span>
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/page404"
             className="py-5 px-8 whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[25px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D] "
           >
             <span>Download App</span>
-          </a>
+          </Link>
           <p className="pt-[10px] text-base mt-8">No Credit Card is Required</p>
         </div>
       </section>
