@@ -1,11 +1,12 @@
+/* eslint-disable @next/next/link-passhref */
 import Image from "next/image";
-import { Inter } from "next/font/google";
+
 import Feature from "./feature";
 import HowItWork from "./howItsWork";
 import PricingSection from "./pricingSection";
-import Demo from "./demo";
+
 import FooterSection from "./footerSection";
-const inter = Inter({ subsets: ["latin"] });
+
 import Link from "next/link";
 
 export default function Home() {
@@ -42,9 +43,9 @@ export default function Home() {
             </button>
           </div>
           <div className="flex items-center justify-start gap-4 relative z-10">
-            <Link href="/demo">
+            <Link href="/upload">
               <button className="py-3 px-6 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-sm font-semibold hover:shadow-sm hover:shadow-[#9ECB1D] ">
-                Demo
+                Upload
               </button>
             </Link>
             <Link
@@ -85,7 +86,7 @@ export default function Home() {
           </div>
         </nav>
       </section>
-      <section className=" flex items-center flex-row-reverse bg-black py-4  ">
+      <section className=" flex items-center w-full justify-evenly flex-row-reverse bg-black py-4  ">
         <div className=" relative bottom-[105px] right-4 z-10">
           <svg
             width="597"
@@ -100,8 +101,8 @@ export default function Home() {
                 cy="298.5"
                 r="197.5"
                 stroke="#37373D"
-                stroke-opacity="0.35"
-                stroke-width="18"
+                strokeOpacity="0.35"
+                strokeWidth="18"
               />
             </g>
             <g filter="url(#filter1_f_1044_219)">
@@ -110,8 +111,8 @@ export default function Home() {
                 cy="298.5"
                 r="238.5"
                 stroke="#3B3B3F"
-                stroke-opacity="0.15"
-                stroke-width="18"
+                strokeOpacity="0.15"
+                strokeWidth="18"
               />
             </g>
             <circle
@@ -119,8 +120,8 @@ export default function Home() {
               cy="298.5"
               r="297.5"
               stroke="#363637"
-              stroke-opacity="0.5"
-              stroke-width="2"
+              strokeOpacity="0.5"
+              strokeWidth="2"
             />
             <g filter="url(#filter2_i_1044_219)">
               <circle cx="299" cy="299" r="164" fill="#2A2A2E" />
@@ -224,9 +225,9 @@ export default function Home() {
                 width="437"
                 height="437"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -245,9 +246,9 @@ export default function Home() {
                 width="519"
                 height="519"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -266,9 +267,9 @@ export default function Home() {
                 width="339"
                 height="345"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -306,9 +307,9 @@ export default function Home() {
                 width="28"
                 height="28"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -327,9 +328,9 @@ export default function Home() {
                 width="28"
                 height="28"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -348,9 +349,9 @@ export default function Home() {
                 width="18"
                 height="17"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -369,9 +370,9 @@ export default function Home() {
                 width="18"
                 height="18"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -390,9 +391,9 @@ export default function Home() {
                 width="18"
                 height="17"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -411,9 +412,9 @@ export default function Home() {
                 width="28"
                 height="28"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -432,9 +433,9 @@ export default function Home() {
                 width="28"
                 height="28"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -453,9 +454,9 @@ export default function Home() {
                 width="28"
                 height="28"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -474,9 +475,9 @@ export default function Home() {
                 width="16"
                 height="16"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -495,9 +496,9 @@ export default function Home() {
                 width="14"
                 height="14"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -516,9 +517,9 @@ export default function Home() {
                 width="17"
                 height="18"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -537,9 +538,9 @@ export default function Home() {
                 width="19"
                 height="18"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -558,9 +559,9 @@ export default function Home() {
                 width="19"
                 height="18"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -579,9 +580,9 @@ export default function Home() {
                 width="18"
                 height="18"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend
                   mode="normal"
                   in="SourceGraphic"
@@ -601,8 +602,8 @@ export default function Home() {
                 gradientUnits="userSpaceOnUse"
                 gradientTransform="translate(235 231.5) rotate(46.2387) scale(255.658)"
               >
-                <stop offset="0.00984676" stop-color="#505050" />
-                <stop offset="1" stop-color="#292929" stop-opacity="0" />
+                <stop offset="0.00984676" stopColor="#505050" />
+                <stop offset="1" stopColor="#292929" stopOpacity="0" />
               </radialGradient>
             </defs>
           </svg>
@@ -624,7 +625,7 @@ export default function Home() {
             Technology
           </p>
           <Link
-            href="/signup"
+            href="/register"
             className="py-5 px-9 whitespace-nowrap rounded-full text-white bg-opacity-20 bg-white font-['Poppins']  text-base font-bold shadow-md hover:shadow-[#9ECB1D] "
             target="_BLANK"
           >
@@ -639,50 +640,17 @@ export default function Home() {
           <p className="pt-[10px] text-base mt-8">No Credit Card is Required</p>
         </div>
       </section>
-      <div className=" font-['Poppins'] bg-black flex items-center flex-row-reverse ">
-        <div className=" pl-[2.75rem] pr-4 w-full  ">
+      <div className=" font-['Poppins'] bg-black flex items-center flex-row-reverse overflow-hidden">
+        <div className=" pl-[2.75rem] pr-4 w-full  overflow-x-auto">
           <div className="xl:w-[25%] xl:float-left lg:w-2/4 lg:float-left md:w-2/4 md:float-left sm:w-full sm:float-left  pr-4 pl-4 min-h-[1px] flex">
-            <div className=" pl-[30px]  pb-[60px] mt-[30px] mb-[135px] border-b-[1px] border-[#9ECB1D]  flex">
-              <div className="text-center ">
-                <p className="text-white pr-[75px] text-[20px] font-bold  ">
-                  <span className="   text-[#9ECB1D]  text-[53px] font-extralight pr-2  ">
-                    5,700
-                  </span>
-                  Users
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-white pr-[75px] text-[20px] font-bold ">
-                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
-                    500
-                  </span>
-                  Companies
-                </p>
-              </div>
-              <div className="text-center">
-                <p className="text-white pr-[75px] text-[20px] font-bold ">
-                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
-                    10,000
-                  </span>
-                  Employee
-                </p>
-              </div>
-              <div className="text-center ">
-                <p className="text-white pr-[30px] text-[20px] font-bold ">
-                  <span className="text-[#9ECB1D]  text-[53px] font-extralight pr-2 ">
-                    750
-                  </span>
-                  Devices
-                </p>
-              </div>
-            </div>
+            <div className=" pl-[30px]  pb-[60px] mt-[30px] mb-[135px] flex"></div>
           </div>
         </div>
       </div>
       <Feature />
       <HowItWork />
       <PricingSection />
-      <Demo />
+
       <FooterSection />
     </>
   );

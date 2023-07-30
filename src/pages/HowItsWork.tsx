@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
@@ -7,15 +8,15 @@ export default function HowItWork() {
     <>
       {/* circle image section*/}
       <div className="bg-black font-['Poppins'] relative text-[14px] w-full ">
-        <div className="flex items-center relative justify-start">
+        <div className="flex items-center xl:flex-row flex-col relative justify-start">
           <Image
             src={"/circle.png"}
             alt="cicle-img"
             width={"600"}
             height={"600"}
-            className="bottom-[150px] relative"
+            className="bottom-[150px] relative xl:block hidden"
           />
-          <div className="absolute left-[80px]  z-10">
+          <div className="absolute left-[80px] xl:block hidden z-10">
             <Image
               src={"/login_image.png"}
               alt=""
@@ -26,7 +27,7 @@ export default function HowItWork() {
           </div>
           {/*how it work section*/}
           <div className="  relative text-[32px] w-[50%] box-border float-left  pr-4 pl-4 ">
-            <div className="pl-[85px] ">
+            <div className="xl:pl-[85px] pl-0">
               <div className="mb-[40px]">
                 <h3 className="text-[32px] font-semibold">
                   How does this App Work?

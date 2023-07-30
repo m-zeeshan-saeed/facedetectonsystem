@@ -1,7 +1,8 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
+"use client";
+import { checkout } from "@/checkout/checkout";
+import Link from "next/link";
 
-export default function PricingSection() {
+const PricingSection = () => {
   return (
     <section className=" bg-black">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
@@ -18,6 +19,7 @@ export default function PricingSection() {
         </div>
         <div className="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
           {/* Pricing Card */}
+
           <div className="flex flex-col p-12 mx-auto max-w-lg text-center text-gray-900  rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 bg-gray-800 dark:text-white">
             <h3 className="mb-4 text-3xl font-semibold">FREE</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -38,9 +40,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>Android & (iOS Coming Soon)</span>
@@ -54,9 +56,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span> Support</span>
@@ -147,14 +149,15 @@ export default function PricingSection() {
                 </span>
               </li>
             </ul>
-            <a
-              href="#"
+            <Link
+              href="/login"
               className="py-4  whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[70px] mr-[70px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D] mt-4"
             >
               Activate
-            </a>
+            </Link>
           </div>
           {/* Pricing Card */}
+
           <div className="flex flex-col p-10 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
             <h3 className="mb-4 text-2xl font-semibold">PROFESSIONAL</h3>
             <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
@@ -175,9 +178,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>Android & (iOS Coming Soon)</span>
@@ -191,9 +194,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span> Support</span>
@@ -207,9 +210,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -225,9 +228,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -243,9 +246,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -289,12 +292,18 @@ export default function PricingSection() {
                 </span>
               </li>
             </ul>
-            <a
-              href="#"
+            <button
+              onClick={() => {
+                checkout({
+                  lineItems: [
+                    { price: "price_1NUwYxK8u9XBGRIaVuUtPanH", quantity: 1 },
+                  ],
+                });
+              }}
               className="py-4  whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[85px] mr-[85px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D]"
             >
               Activate
-            </a>
+            </button>
           </div>
           {/* Pricing Card */}
           <div className="flex flex-col p-10 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
@@ -317,9 +326,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>Android & (iOS Coming Soon)</span>
@@ -333,9 +342,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>Support</span>
@@ -349,9 +358,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -367,9 +376,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -385,9 +394,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -405,9 +414,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -423,9 +432,9 @@ export default function PricingSection() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </svg>
                 <span>
@@ -433,15 +442,22 @@ export default function PricingSection() {
                 </span>
               </li>
             </ul>
-            <a
-              href="#"
+            <button
+              onClick={() => {
+                checkout({
+                  lineItems: [
+                    { price: "price_1NUwZyK8u9XBGRIa85YcYdMn", quantity: 1 },
+                  ],
+                });
+              }}
               className="py-4  whitespace-nowrap rounded-full text-black  font-['Poppins']  text-base ml-[85px] mr-[85px] font-bold bg-[#9ECB1D]  hover:text-white hover:bg-[#232323] hover:shadow-md hover:shadow-[#9ECB1D]"
             >
               Activate
-            </a>
+            </button>
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
+export default PricingSection;

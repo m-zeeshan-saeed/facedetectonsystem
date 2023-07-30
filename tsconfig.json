@@ -24,7 +24,16 @@
     "**/*.tsx",
     "src/pages/feature.jsx",
     "components/Login.jsx",
-    "src/pages/signup.jsx"
+    "src/pages/register.jsx",
+    "src/pages/admin/dashboard.jsx",
+    "src/pages/login.jsx",
+    "src/pages/_app.tsx",
+    "src/contexts/AuthContext.jsx",
+    "src/pages/_document.tsx",
+    "src/pages/index.tsx",
+    "src/pages/pricingSection.jsx",
+    "src/pages/api/getproducts/route.js",
+    "src/pages/upload.jsx"
   ],
   "exclude": ["node_modules"]
 }
