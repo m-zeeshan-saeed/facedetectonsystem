@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
     "@itseasy21/react-elastic-carousel": "^0.12.3",
     "@material-tailwind/react": "^2.0.4",
     "@stripe/stripe-js": "^1.54.1",

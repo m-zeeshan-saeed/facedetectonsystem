@@ -1,5 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
@@ -19,7 +17,7 @@ export default function Example() {
     if (!isLoading && !authUser) {
       router.push("/login");
     }
-  }, [authUser, isLoading]);
+  }, [authUser, isLoading, router]);
 
   const user = {
     name: "Tom Cook",

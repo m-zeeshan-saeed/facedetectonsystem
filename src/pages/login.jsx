@@ -2,7 +2,7 @@
 import React from "react";
 import { FcGoogle } from "react-icons/fc";
 import { useState, useEffect } from "react";
-import { auth } from "./utils/init-firebase";
+import { auth } from "../Components/utils/init-firebase";
 import {
   signInWithEmailAndPassword,
   GoogleAuthProvider,
