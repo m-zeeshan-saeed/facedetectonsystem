@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/link-passhref */
 import Image from "next/image";
 
 import Feature from "./feature";
