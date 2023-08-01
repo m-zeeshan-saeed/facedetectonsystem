@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/pages/feature.jsx",
+    "src/pages/Feature.jsx",
     "components/Login.jsx",
     "src/pages/register.jsx",
     "src/pages/admin/dashboard.jsx",
@@ -31,7 +31,6 @@
     "src/contexts/AuthContext.jsx",
     "src/pages/_document.tsx",
     "src/pages/index.jsx",
-    "src/pages/index.tsx",
     "src/pages/pricingSection.jsx",
     "src/pages/api/getproducts/route.js",
     "src/pages/upload.jsx"

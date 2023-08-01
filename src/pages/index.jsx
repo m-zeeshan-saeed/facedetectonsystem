@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import Feature from "./feature";
-import HowItWork from "./howItsWork";
-import PricingSection from "./pricingSection";
+import { Feature } from "./Feature";
+import { HowItWork } from "./howItsWork";
+import { PricingSection } from "./pricingSection";
 
 import FooterSection from "./footerSection";
 
